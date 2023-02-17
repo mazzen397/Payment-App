@@ -1,5 +1,5 @@
 #ifndef Card.h
-#define Card.h
+#define Card
 #include"Types.h"
 #include<stdio.h>
 
@@ -9,6 +9,7 @@ typedef struct ST_cardData_t
     uint8_t primaryAccountNumber[20];
     uint8_t cardExpirationDate[6];
 }ST_cardData_t;
+ST_cardData_t cardData;
 //Card Error Handling
 typedef enum EN_cardError_t
 {
